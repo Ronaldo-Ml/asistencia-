@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistencia de Alumnos</title>
+    <style>
+        .AsistenciaUCH {
+            background-color: rgb(195, 199, 198);
+            height: 5vh;
+            margin-bottom: 18px;
+            color: rgb(88, 105, 150);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        table {
+           border-collapse: collapse;
+           width: 50%;
+           margin: 0 auto;
+        }
+        th {
+            background-color: rgb(255, 255, 255);
+        }
+        th, td, input, textarea {
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+            text-align: center;
+        }
+        input, textarea, select {
+            border-radius: 5px;
+        }
+        textarea {
+            width: 200px;
+            resize: horizontal;
+        }
+        th, td {
+            border-bottom: 2px solid gray; 
+            padding: 8px;   
+        }  
+        input {
+            width: 100%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="AsistenciaUCH">
+        <h1>Alumnos UCH</h1>
+    </div>
+    <div class="Tablita">
+        <table>
+            <tr>
+                <th>Nro</th>
+                <th>foto</th>
+                <th>Alumno</th>
+                <th>Apellidos y Nombres</th>
+                <th>Programa de Estudio</th>
+                <th>Mod.</th>
+                <th>Med.</th>
+                <th>Celular</th>
+                <th>Correo</th>
+                <th>Asistencia</th>
+                <th>Observación</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>
+                    <form>
+                        <input type="text" placeholder="Buscar">
+                    </form>
+                </th>
+                <th>
+                    <form>
+                        <input type="text" placeholder="Buscar">
+                    </form>
+                </th>
+                <th>
+                    <form>
+                        <input type="text" placeholder="Buscar">
+                    </form>
+                </th>
+                <th>
+                    <form>
+                        <input type="text" placeholder="Buscar">
+                    </form>
+                </th>
+                <th>
+                    <form>
+                        <input type="text" placeholder="Buscar">
+                    </form>
+                </th>
+                <th>
+                    <form>
+                        <input type="text" placeholder="Buscar">
+                    </form>
+                </th>
+                <th>
+                    <form>
+                        <input type="text" placeholder="Buscar">
+                    </form>
+                </th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><img src="img/imagen 1.jpg" style="width: 100px;"></td>
+                <td>243321</td>
+                <td>JUAN PÉREZ</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>936529718</td>
+                <td>juan_péres@gmail.com</td>
+                <td>
+                    <select class="Opciones">
+                        <option value="Asistencia"disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Presente</option>
+                        <option value="Asistencia">Ausente</option>
+                        <option value="Asistencia">Tardanza</option>
+                        <option value="Asistencia">Falta</option>
+                    </select>
+                </td>
+                <td>
+                    <textarea class="Observaciones" rows="3" placeholder="Observaciones"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img src="img/imagen 2.jpg" style="width: 100px;"></td>
+                <td>2243322</td>
+                <td>MARÍA RODRIGEZ</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>963525495</td>
+                <td>maría_rodrígez@gmail.com</td>
+                <td>
+                    <select class="Opciones">
+                        <option value="Asistencia"disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Asistencia">Inasistencia</option>
+                        <option value="Asistencia">Tardanza</option>
+                        <option value="Asistencia">Falta</option>
+                    </select>
+                </td>
+                <td>
+                    <textarea class="Observaciones" rows="3" placeholder="Observaciones"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><img src="img/imagen 3.jpg" style="width: 100px;"></td>
+                <td>2243323</td>
+                <td>SHAMIRA PEÑA</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>987889587</td>
+                <td>shamira_peña@gmail.com</td>
+                <td>
+                    <select class="Opciones">
+                        <option value="Asistencia"disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Asistencia">Inasistencia</option>
+                        <option value="Asistencia">Tardanza</option>
+                        <option value="Asistencia">Falta</option>
+                    </select>
+                </td>
+                <td> <textarea class="Observaciones" rows="3" placeholder="Observaciones"></textarea></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><img src="img/imagen 4.jpg" style="width: 100px;"></td>
+                <td>243324</td>
+                <td>CARLOS LÓPEZ</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>916754449</td>
+                <td>carlos_lópez@gmail.com</td>
+                <td>
+                    <select class="Opciones">
+                        <option value="Asistencia"disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Asistencia">Inasistencia</option>
+                        <option value="Asistencia">Tardanza</option>
+                        <option value="Asistencia">Falta</option>
+                    </select>
+                </td>
+                <td><textarea class="Observaciones" rows="3" placeholder="Observaciones"></textarea></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><img src="img/imagen 5.jpg" style="width: 100px;"></td>
+                <td>243325</td>
+                <td>PEDRO MARTÍNEZ</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>923166081</td>
+                <td>pedro_martínez@gmail.com</td>
+                <td>
+                    <select class="Opciones">
+                        <option value="Asistencia"disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Asistencia">Inasistencia</option>
+                        <option value="Asistencia">Tardanza</option>
+                        <option value="Asistencia">Falta</option>
+                    </select>
+                </td>
+                <td><textarea class="Observaciones" rows="3" placeholder="Observaciones"></textarea></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><img src="img/imagen 6.jpg" style="width: 100px;"></td>
+                <td>243326</td>
+                <td>JEREMY HUACCANI</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>903213452</td>
+                <td>jeremy_huaccani@gmail.com</td>
+                <td>
+                    <select class="Opciones">
+                        <option value="Asistencia"disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Asistencia">Inasistencia</option>
+                        <option value="Asistencia">Tardanza</option>
+                        <option value="Asistencia">Falta</option>
+                    </select>
+                </td>
+                <td><textarea class="Observaciones" rows="3" placeholder="Observaciones"></textarea></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><img src="img/imagen 7.jpg" style="width: 100px;"></td>
+                <td>243327</td>
+                <td>CLAUDIA MARRUJO</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>945372899</td>
+                <td>claudia_marrujo@gmail.com</td>
+                <td>
+                    <select class="Opciones">
+                        <option value="Asistencia"disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Asistencia">Inasistencia</option>
+                        <option value="Asistencia">Tardanza</option>
+                        <option value="Asistencia">Falta</option>
+                    </select>
+                </td>
+                <td><textarea class="Observaciones" rows="3" placeholder="Observaciones"></textarea></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><img src="img/imagen 8.jpg" style="width: 100px;"></td>
+                <td>243328</td>
+                <td>RONALDO MEDINA</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>932512662</td>
+                <td>ronaldo_Ml@gmail.com</td>
+                <td>
+                    <select class="Opciones">
+                        <option value="Asistencia"disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Asistencia">Inasistencia</option>
+                        <option value="Asistencia">Tardanza</option>
+                        <option value="Asistencia">Falta</option>
+                    </select>
+                </td>
+                <td><textarea class="Observaciones" rows="3" placeholder="Observaciones"></textarea></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><img src="img/imagen 9.jpg" style="width: 100px;"></td>
+                <td>243329</td>
+                <td>DAVID SANTAMARIA</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>982142690</td>
+                <td>david_santamaria@gmail.com</td>
+                <td>
+                    <select class="Opciones">
+                        <option value="Asistencia"disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Asistencia">Inasistencia</option>
+                        <option value="Asistencia">Tardanza</option>
+                        <option value="Asistencia">Falta</option>
+                    </select>
+                </td>
+                <td><textarea class="Observaciones" rows="3" placeholder="Observaciones"></textarea></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><img src="img/imagen 10.jpg" style="width: 100px;"></td>
+                <td>>243330</td>
+                <td>DANIEL GOMEZ</td>
+                <td>INGENIERIA DE SISTEMAS E INFORMATICA</td>
+                <td>P</td>
+                <td>P</td>
+                <td>962166623</td>
+                <td>daniel_gomez@gmail.com</td>
+                <td>
+                    <select class="Opciones">
+                        <option value="Asistencia"disabled selected>Seleccionar</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Asistencia">Inasistencia</option>
+                        <option value="Asistencia">Tardanza</option>
+                        <option value="Asistencia">Falta</option>
+                    </select>
+                </td>
+                <td><textarea class="Observaciones" rows="3" placeholder="Observaciones"></textarea></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
